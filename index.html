@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Character Set -->
+		<meta charset="utf-8">
+		<!-- Meta viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title -->
+		<title>Debugging Job Application Tracker with Constructor Notation</title>
+
+		<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="wrapper">
+						<h1>Track Job Applications</h1>
+						<form id="form">
+							<div class="form-group">
+								<input id="company" type="text" placeholder="Company" autofocus class="form-control">
+							</div>
+							<div class="form-group">
+								<input id="dateApplied" type="text" placeholder="Date Appied" class="form-control">
+							</div>
+							<div class="form-group">
+								<input id="response" type="text" placeholder="Response" class="form-control">
+							</div>
+							<div class="form-group">
+								<textarea id="notes" type="text" placeholder="Notes" class="form-control" rows="3"></textarea>
+							</div>
+							<button id="tracker" class="btn btn-primary" type="button" onclick="newTracker()">Create New Job App</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- DISPLAY RESULTS -->
+				<div class="col-sm-6">
+					<div id="jobDiv"></div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Custom JavaScript -->
+	<script src="js/main.js"></script>
+	</body>
+</html>
